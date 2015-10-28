@@ -1,0 +1,93 @@
+[{
+	"Mandt": "Mandt 11",
+	"Lgnum": "15131",
+	"Who": "11",
+	"Wave": "1766",
+	"Status": "D",
+	"StartBin": "029-050-1",
+	"Whoid": "00001111",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 11',Lgnum='Lgnum 11',Who='Who 11')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 11',Lgnum='Lgnum 11',Who='Who 11')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 12",
+	"Lgnum": "16103",
+	"Who": "12",
+	"Wave": "1767",
+	"Status": "",
+	"StartBin": "RC",
+	"Whoid": "10101101",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 12',Lgnum='Lgnum 12',Who='Who 12')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 12',Lgnum='Lgnum 12',Who='Who 12')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 13",
+	"Lgnum": "16104",
+	"Who": "13",
+	"Wave": "1768",
+	"Status": "D",
+	"StartBin": "",
+	"Whoid": "00000011",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 13',Lgnum='Lgnum 13',Who='Who 13')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 13',Lgnum='Lgnum 13',Who='Who 13')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 14",
+	"Lgnum": "16105",
+	"Who": "14",
+	"Wave": "1769",
+	"Status": "",
+	"StartBin": "",
+	"Whoid": "01110011",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 14',Lgnum='Lgnum 14',Who='Who 14')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 14',Lgnum='Lgnum 14',Who='Who 14')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 15",
+	"Lgnum": "16106",
+	"Who": "15",
+	"Wave": "1770",
+	"Status": "D",
+	"StartBin": "",
+	"Whoid": "11011101",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 15',Lgnum='Lgnum 15',Who='Who 15')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 15',Lgnum='Lgnum 15',Who='Who 15')/OrderToTasks"
+		}
+	}
+}, {
+	"Who": "16",
+	"Wave": "1773",
+	"Status": "D",
+	"Whoid": "11010101",
+	"Lgnum": "16109",
+	"Mandt": "Mandt 16"
+}]

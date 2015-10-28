@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="BL_Monitoring.view.Master">
+	<Page id="masterPage" navButtonPress="onNavBack" showNavButton="true" title="{i18n&gt;masterTitle}">
+		<subHeader id="masterSubHeader">
+			<Bar id="searchBar">
+				<contentMiddle>
+					<SearchField id="searchField" placeholder="{i18n&gt;masterSearchPlaceholder}" search="onSearch" showRefreshButton="{device&gt;/isNoTouch}" tooltip="{i18n&gt;masterSearchTooltip}" width="100%"/>
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+		<content>
+			<List growing="true" growingScrollToLoad="true" id="list" includeItemInSelection="true" items="{/WarehouseOrderSet}" mode="{device&gt;/listMode}" noDataText="{i18n&gt;masterListNoDataText}" select="onSelect">
+				<items id="masterList">
+					<ObjectListItem activeIcon="" counter="0" icon="" id="mainListItem" intro="{/#WarehouseOrder/Who/@sap:label}" number="{Whoid}" numberState="Success" numberUnit="{Status}" press="onSelect" selected="false" showMarkers="false" title="{Lgnum}" type="{device&gt;/listItemType}">
+						<core:ExtensionPoint name="extListItemInfo"/>
+					</ObjectListItem>
+				</items>
+				<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+			</List>
+		</content>
+		<footer id="masterFooter">
+			<Toolbar id="masterToolbar">
+				<content>
+					<footerbar:SettingsButton icon="sap-icon://action-settings" id="settingsButton" tooltip="Help"/>
+					<Button icon="sap-icon://sort" id="btnSettings" press="onTableSettingsPressed"/>
+				</content>
+			</Toolbar>
+		</footer>
+		<headerContent>
+			<Button activeIcon="sap-icon://multi-select" icon="sap-icon://multi-select" id="__button3" press="checkAll" text="" width=""/>
+		</headerContent>
+	</Page>
+</mvc:View>

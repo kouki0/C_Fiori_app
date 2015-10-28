@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZDEMOSRV_SRV" xml:lang="en"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="HandlingUnit" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Mandt" />
+                    <PropertyRef Name="GuidHu" />
+                    <PropertyRef Name="Lgnum" />
+                </Key>
+                <Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Client" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="GuidHu" Type="Edm.Binary" Nullable="false" sap:label="HU GUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Huident" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Handling Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="PmatGuid" Type="Edm.Binary" Nullable="false" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="NWeight" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="3" sap:unit="UnitGw" sap:label="Loading Weight" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="UnitGw" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Weight Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="NVolume" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="3" sap:unit="UnitGv" sap:label="Loading Volume" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="UnitGv" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Volume Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="Lgnum" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Warehouse No." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Entitled" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Ent. to Dispose" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+            </EntityType>
+            <EntityType Name="WarehouseOrder" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Mandt" />
+                    <PropertyRef Name="Lgnum" />
+                    <PropertyRef Name="Who" />
+                </Key>
+                <Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Client" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Lgnum" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Warehouse No." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Who" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Warehouse Order" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Wave" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Wave" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="WO Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="StartBin" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Starting Point" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Whoid" Type="Edm.Binary" Nullable="false" sap:label="Warehouse Order" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <NavigationProperty Name="OrderToTasks" Relationship="ZDEMOSRV_SRV.WhOrderToWhTasks" FromRole="FromRole_WhOrderToWhTasks" ToRole="ToRole_WhOrderToWhTasks" />
+            </EntityType>
+            <EntityType Name="WarehouseTask" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Mandt" />
+                    <PropertyRef Name="Lgnum" />
+                    <PropertyRef Name="Tanum" />
+                    <PropertyRef Name="Who" />
+                </Key>
+                <Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Client" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Lgnum" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Warehouse No." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Tanum" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Warehouse Task" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Tostat" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="WT Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Priority" Type="Edm.Byte" Nullable="false" sap:label="Priority" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Matid" Type="Edm.Binary" Nullable="false" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Batchid" Type="Edm.Binary" Nullable="false" sap:label="Batch" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Entitled" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Ent. to Dispose" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Meins" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Base Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="Altme" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Alternatve Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="Vsolm" Type="Edm.Decimal" Nullable="false" Precision="31" Scale="14" sap:unit="Meins" sap:label="Target Quantity" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Vsola" Type="Edm.Decimal" Nullable="false" Precision="31" Scale="14" sap:unit="Altme" sap:label="Target Quantity" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Weight" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="3" sap:unit="UnitW" sap:label="Loading Weight" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="UnitW" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Weight Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="Volum" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="3" sap:unit="UnitV" sap:label="Loading Volume" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="UnitV" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Volume Unit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure" />
+                <Property Name="Vlpla" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Source Bin" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Nlpla" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Dest. Stor. Bin" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Who" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Warehouse Order" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Huid" Type="Edm.Binary" Nullable="false" sap:label="Int. HU ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Whoseq" Type="Edm.Double" Nullable="false" sap:label="Sequence" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+            </EntityType>
+            <ComplexType Name="Return">
+                <Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Message type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Message Class" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Number" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Message number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Message" Type="Edm.String" Nullable="false" MaxLength="220" sap:label="Message text" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="LogNo" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Log number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="LogMsgNo" Type="Edm.String" Nullable="false" MaxLength="6" sap:label="Message no." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="MessageV1" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Message Variable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="MessageV2" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Message Variable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="MessageV3" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Message Variable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="MessageV4" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Message Variable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Parameter" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Parameter Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Row" Type="Edm.Int32" Nullable="false" sap:label="Parameter line" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="Field" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="FieldName" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+                <Property Name="System" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Logical system" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+            </ComplexType>
+            <Association Name="WhOrderToWhTasks" sap:content-version="1">
+                <End Type="ZDEMOSRV_SRV.WarehouseOrder" Multiplicity="1" Role="FromRole_WhOrderToWhTasks" />
+                <End Type="ZDEMOSRV_SRV.WarehouseTask" Multiplicity="*" Role="ToRole_WhOrderToWhTasks" />
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_WhOrderToWhTasks">
+                        <PropertyRef Name="Mandt" />
+                        <PropertyRef Name="Lgnum" />
+                        <PropertyRef Name="Who" />
+                    </Principal>
+                    <Dependent Role="ToRole_WhOrderToWhTasks">
+                        <PropertyRef Name="Mandt" />
+                        <PropertyRef Name="Lgnum" />
+                        <PropertyRef Name="Who" />
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="ZDEMOSRV_SRV_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="WarehouseOrderSet" EntityType="ZDEMOSRV_SRV.WarehouseOrder" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" />
+                <EntitySet Name="WarehouseTaskSet" EntityType="ZDEMOSRV_SRV.WarehouseTask" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" />
+                <EntitySet Name="HandlingUnitSet" EntityType="ZDEMOSRV_SRV.HandlingUnit" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" />
+                <AssociationSet Name="WhOrderToWhTasksSet" Association="ZDEMOSRV_SRV.WhOrderToWhTasks" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="WarehouseOrderSet" Role="FromRole_WhOrderToWhTasks" />
+                    <End EntitySet="WarehouseTaskSet" Role="ToRole_WhOrderToWhTasks" />
+                </AssociationSet>
+                <FunctionImport Name="ConfirmWT" ReturnType="ZDEMOSRV_SRV.Return" m:HttpMethod="POST" sap:label="Confirm Warehouse Task" sap:action-for="ZDEMOSRV_SRV.WarehouseTask">
+                    <Parameter Name="tanum" Type="Edm.String" Mode="In" />
+                    <Parameter Name="Vsolm" Type="Edm.String" Mode="In" />
+                    <Parameter Name="Meins" Type="Edm.String" Mode="In" />
+                    <Parameter Name="Lgnum" Type="Edm.String" Mode="In" />
+                </FunctionImport>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

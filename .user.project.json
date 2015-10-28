@@ -1,0 +1,45 @@
+{
+  "run": [
+    {
+      "filePath": "/BL_Monitoring/localIndex.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "_metadata": {
+        "id": 5648904,
+        "runnerId": "webapprunner",
+        "displayName": "New Web Application 1"
+      }
+    },
+    {
+      "filePath": "Local\\BL_Monitoring/view/WTDetail.view.xml",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withWorkspace",
+      "urlParameters": null,
+      "appsVersion": [],
+      "_metadata": {
+        "id": 7357123,
+        "runnerId": "qunitrunner",
+        "displayName": "New Unit Test",
+        "hasIssues": true
+      }
+    }
+  ]
+}

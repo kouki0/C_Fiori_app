@@ -1,0 +1,50 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="BL_Monitoring.view.WTDetail">
+	<Page id="detailPage" navButtonPress="onNavBack" showNavButton="true" title="Warehouse Task Detail">
+		<content>
+			<IconTabBar expanded="{device&gt;/isNoPhone}" id="idIconTabBar">
+				<items id="detailsItems">
+					<IconTabFilter content="{/WarehouseTaskSet}" count="" design="Horizontal" icon="sap-icon://task" iconColor="Neutral" id="__filter2" showAll="false" text="Warehouse Task">
+						<content>
+							<List growing="true" growingScrollToLoad="true" id="__list2" noDataText="Drop list items here" itemPress="handleResponsivePopoverPress">
+								<items>
+									<StandardListItem counter="0" description="{Mandt}" id="__item6" title="{/#WarehouseTask/Mandt/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Lgnum}" id="__item7" title="{/#WarehouseTask/Lgnum/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Tanum}" id="__item8" title="{/#WarehouseTask/Tanum/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Tostat}" id="__item9" title="{/#WarehouseTask/Tostat/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Priority}" id="__item10" title="{/#WarehouseTask/Priority/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Matid}" id="__item11" title="{/#WarehouseTask/Matid/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Batchid}" id="__item12" title="{/#WarehouseTask/Batchid/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Entitled}" id="__item13" title="{/#WarehouseTask/Entitled/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Meins}" id="__item14" title="{/#WarehouseTask/Meins/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Altme}" id="__item15" title="{/#WarehouseTask/Altme/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Vsolm}" id="__item16" title="{/#WarehouseTask/Vsolm/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Vsola}" id="__item17" title="{/#WarehouseTask/Vsola/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Weight}" id="__item18" title="{/#WarehouseTask/Weight/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{UnitW}" id="__item19" title="{/#WarehouseTask/UnitW/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Volum}" id="__item20" title="{/#WarehouseTask/Volum/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{UnitV}" id="__item21" title="{/#WarehouseTask/UnitV/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Vlpla}" id="__item22" title="{/#WarehouseTask/Vlpla/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Nlpla}" id="__item23" title="{/#WarehouseTask/Nlpla/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Who}" id="__item24" title="{/#WarehouseTask/Who/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Huid}" id="__item25" title="{/#WarehouseTask/Huid/@sap:label}" type="Active"/>
+									<StandardListItem counter="0" description="{Whoseq}" id="__item26" title="{/#WarehouseTask/Whoseq/@sap:label}" type="Active"/>
+								</items>
+								<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+							</List>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<OverflowToolbar id="footerToolbar">
+				<ToolbarSpacer id="footerToolbarSpacer"/>
+				<Button id="assignButton" press="" text="{i18n&gt;xbut.assign}" type="Accept"/>
+				<Button id="unassignButton" press="" text="{i18n&gt;xbut.unassign}" type="Reject"/>
+				<Button id="lockButton" press="" text="{i18n&gt;xbut.lock}" type="Default"/>
+				<Button id="unlockButton" press="" text="{i18n&gt;xbut.unlock}" type="Transparent"/>
+				<Button id="changeLSD" press="" text="{i18n&gt;xbut.lsd}" type="Transparent"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

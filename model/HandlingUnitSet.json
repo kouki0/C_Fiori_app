@@ -1,0 +1,151 @@
+[{
+	"Mandt": "Mandt 1",
+	"GuidHu": "10110110000101001010101111111100",
+	"Huident": "Huident 1",
+	"PmatGuid": "01000011101100100001011000001111",
+	"NWeight": 8178.16,
+	"UnitGw": "UnitGw 1",
+	"NVolume": 3256.65,
+	"UnitGv": "UnitGv 1",
+	"Lgnum": "Lgnum 1",
+	"Entitled": "Entitled 1",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 1',GuidHu=10110110000101001010101111111100,Lgnum='Lgnum 1')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 2",
+	"GuidHu": "00111111111111010110011001110110",
+	"Huident": "Huident 2",
+	"PmatGuid": "01000011101001010110101101010011",
+	"NWeight": 3895.18,
+	"UnitGw": "UnitGw 2",
+	"NVolume": 955.5,
+	"UnitGv": "UnitGv 2",
+	"Lgnum": "Lgnum 2",
+	"Entitled": "Entitled 2",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 2',GuidHu=00111111111111010110011001110110,Lgnum='Lgnum 2')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 3",
+	"GuidHu": "00011011101101011100101100011011",
+	"Huident": "Huident 3",
+	"PmatGuid": "11101100100000001001110111100000",
+	"NWeight": 7884.33,
+	"UnitGw": "UnitGw 3",
+	"NVolume": 3586.03,
+	"UnitGv": "UnitGv 3",
+	"Lgnum": "Lgnum 3",
+	"Entitled": "Entitled 3",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 3',GuidHu=00011011101101011100101100011011,Lgnum='Lgnum 3')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 4",
+	"GuidHu": "00110111100111011101101100111110",
+	"Huident": "Huident 4",
+	"PmatGuid": "01101100101101111001101100001101",
+	"NWeight": 9497.97,
+	"UnitGw": "UnitGw 4",
+	"NVolume": 8477.44,
+	"UnitGv": "UnitGv 4",
+	"Lgnum": "Lgnum 4",
+	"Entitled": "Entitled 4",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 4',GuidHu=00110111100111011101101100111110,Lgnum='Lgnum 4')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 5",
+	"GuidHu": "01100001000010101110110111001001",
+	"Huident": "Huident 5",
+	"PmatGuid": "00101010000000001001100001001101",
+	"NWeight": 2887.24,
+	"UnitGw": "UnitGw 5",
+	"NVolume": 6519.01,
+	"UnitGv": "UnitGv 5",
+	"Lgnum": "Lgnum 5",
+	"Entitled": "Entitled 5",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 5',GuidHu=01100001000010101110110111001001,Lgnum='Lgnum 5')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 6",
+	"GuidHu": "01011011110111111100010101111000",
+	"Huident": "Huident 6",
+	"PmatGuid": "00100001101110110000111101110001",
+	"NWeight": 8626.69,
+	"UnitGw": "UnitGw 6",
+	"NVolume": 8549.95,
+	"UnitGv": "UnitGv 6",
+	"Lgnum": "Lgnum 6",
+	"Entitled": "Entitled 6",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 6',GuidHu=01011011110111111100010101111000,Lgnum='Lgnum 6')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 7",
+	"GuidHu": "00001001000000010001100001111111",
+	"Huident": "Huident 7",
+	"PmatGuid": "11100000101001011001011100011010",
+	"NWeight": 7913.69,
+	"UnitGw": "UnitGw 7",
+	"NVolume": 4432.38,
+	"UnitGv": "UnitGv 7",
+	"Lgnum": "Lgnum 7",
+	"Entitled": "Entitled 7",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 7',GuidHu=00001001000000010001100001111111,Lgnum='Lgnum 7')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 8",
+	"GuidHu": "01001001010011000011001011000001",
+	"Huident": "Huident 8",
+	"PmatGuid": "11100101110111111111101111010000",
+	"NWeight": 9656.36,
+	"UnitGw": "UnitGw 8",
+	"NVolume": 2732.05,
+	"UnitGv": "UnitGv 8",
+	"Lgnum": "Lgnum 8",
+	"Entitled": "Entitled 8",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 8',GuidHu=01001001010011000011001011000001,Lgnum='Lgnum 8')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 9",
+	"GuidHu": "01110001001000100011011001001100",
+	"Huident": "Huident 9",
+	"PmatGuid": "01111011110110010000101011100100",
+	"NWeight": 8108.58,
+	"UnitGw": "UnitGw 9",
+	"NVolume": 9331.28,
+	"UnitGv": "UnitGv 9",
+	"Lgnum": "Lgnum 9",
+	"Entitled": "Entitled 9",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 9',GuidHu=01110001001000100011011001001100,Lgnum='Lgnum 9')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}, {
+	"Mandt": "Mandt 10",
+	"GuidHu": "11100011110010010100001110000101",
+	"Huident": "Huident 10",
+	"PmatGuid": "10011000000101100101110111111111",
+	"NWeight": 4723,
+	"UnitGw": "UnitGw 10",
+	"NVolume": 4152.83,
+	"UnitGv": "UnitGv 10",
+	"Lgnum": "Lgnum 10",
+	"Entitled": "Entitled 10",
+	"__metadata": {
+		"uri": "HandlingUnitSet(Mandt='Mandt 10',GuidHu=11100011110010010100001110000101,Lgnum='Lgnum 10')",
+		"type": "ZDEMOSRV_SRV.HandlingUnit"
+	}
+}]
